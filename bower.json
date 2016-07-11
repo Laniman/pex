@@ -1,0 +1,14 @@
+{
+  "name": "pex",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0",
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
