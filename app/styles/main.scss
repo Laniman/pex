@@ -23,6 +23,10 @@ $susy: (
   //use-custom: (rem: true)
 );
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -78,6 +82,7 @@ body{
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   padding: 35px 0px;
+  float: left;
 
   &:hover{
     border-bottom-color: white;
@@ -86,8 +91,8 @@ body{
   &:last-child{
     margin-right: 0;
   }
-
 }
+
 
 .navigation-link{
   text-decoration: none;
@@ -137,9 +142,7 @@ body{
   @include clearfix;
 }
 
-.navigation-item{
-  float: left;
-}
+
 
 .header{
   background-image: url("../images/header-bg.jpg");
@@ -200,13 +203,13 @@ body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 68%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .article{
   margin-bottom: 70px;
-  width: 40%;
+  width: 45%;
 
   &:last-child{
     margin-right: 0;
@@ -464,4 +467,98 @@ body{
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.contacts{
+  background-color: #e7526b;
+  padding: 80px 0;
+}
+
+.contacts-inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-inner-intro{
+  width: 32%;
+
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+
+  h3{
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 45px 0 35px;
+  }
+
+  p{
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .emal{
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: underline;
+    padding: 45px 0;
+  }
+}
+
+.contacts-inner-social{
+  font-size: 14px;
+
+
+  a{
+    color: inherit;
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.contacts-inner-form{
+  width: 65%;
+}
+
+.contacts-inner-form{
+  input{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #626262;
+    width: 45%;
+  }
+
+  textarea{
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #626262;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  button[type='submit']{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #626262;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.form-left{
+  float: left;
+}
+.form-right{
+  float: right;
 }
