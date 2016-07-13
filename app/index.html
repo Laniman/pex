@@ -47,20 +47,26 @@
             <div class="top-navigation">
                 <nav class = "navigation">
                     <ul class = "navigation-list">
-                        <li class = "navigation-item navigation-item_current">
-                            <a class="navigation-link" href = "#">About</a>
+                        <li class = "navigation-item">
+                            <a class="navigation-link" href = "#section-1">About</a>
                         </li>
                         <li class = "navigation-item">
-                            <a class="navigation-link" href = "#">How It Works</a>
+                            <a class="navigation-link" href = "#section-2">Action</a>
                         </li>
                         <li class = "navigation-item">
-                            <a class="navigation-link" href = "#">Services</a>
+                            <a class="navigation-link" href = "#section-3">Sec3</a>
                         </li>
                         <li class = "navigation-item">
-                            <a class="navigation-link" href = "#">FAQ</a>
+                            <a class="navigation-link" href = "#section-4">Sec4</a>
                         </li>
                         <li class = "navigation-item">
-                            <a class="navigation-link" href = "#">Contact</a>
+                            <a class="navigation-link" href = "#section-5">Sec5</a>
+                        </li>
+                        <li class = "navigation-item">
+                            <a class="navigation-link" href = "#section-6">Sec6</a>
+                        </li>
+                        <li class = "navigation-item">
+                            <a class="navigation-link" href = "#contacts">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,8 +99,11 @@
         <div class="header-intro">
             <h2 class="intro-title">Designs your eyeballs<br>
                                     will thank you for </h2>
-            <button class="intro-button">Get Started Today</button>
-            <p class="intro-description">Lorem ipsum dolor sit amet, consectetur.</p>
+            <div class="button-area">
+                <button class="intro-button">Get Started Today</button>
+                <p class="intro-description">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
         </div>
 
     </div>
@@ -102,7 +111,7 @@
 <!--end-HEADER-->
 
 <!--Section 1-->
-<section class="section-1">
+<section id="section-1" class="section-1">
     <div class="container">
         <div class="about">
             <div class="article article-1">
@@ -133,7 +142,7 @@
     </div>
 </section>
 
-<section class="section-2">
+<section id="section-2" class="section-2">
     <div class="container">
         <div class="action">
             <h3 class="action-header">
@@ -147,18 +156,22 @@
     </div>
 </section>
 
-<section class="section-3">
+<section id="section-3" class="section-3">
+    <div class="inner-img">
+        <img class = "img" src = "images/photo1.jpg" alt = "photo1">
+    </div>
     <div class="container">
         <div class="s3-inner">
+
             <h3 class="s3-inner-header">A heading is what you need here</h3>
             <p class="s3-inner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium enim est excepturi exercitationem fuga, harum illo iste minima nemo nobis officia pariatur, perspiciatis placeat quidem quisquam quod, voluptas voluptate!</p>
-            <p class="s3inner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deleniti ducimus esse itaque sit. Ab animi culpa cupiditate, ducimus hic illum impedit magnam maiores nostrum possimus quae, quasi quibusdam rerum!</p>
+            <p class="s3-inner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deleniti ducimus esse itaque sit. Ab animi culpa cupiditate, ducimus hic illum impedit magnam maiores nostrum possimus quae, quasi quibusdam rerum!</p>
 
         </div>
     </div>
 </section>
 
-<section class="section-4">
+<section id="section-4" class="section-4">
     <div class="container-fluid">
         <div class="container">
             <div class="s4-inner">
@@ -173,7 +186,7 @@
     </div>
 </section>
 
-<section class="section-5">
+<section id="section-5" class="section-5">
     <div class="container">
         <div class="s5-inner">
             <span class="s5-inner-prof">
@@ -190,7 +203,10 @@
     </div>
 </section>
 
-<section class="section-6">
+<section id="section-6" class="section-6">
+    <div class="inner-img">
+        <img src = "images/photo3.jpg" alt = "photo3">
+    </div>
     <div class="container">
         <div class="s6-inner">
             <h3 class="s6-inner-header">A heading is what you need here</h3>
@@ -200,7 +216,7 @@
     </div>
 </section>
 
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="container">
         <div class="contacts-inner">
             <div class="contacts-inner-intro">
@@ -228,10 +244,6 @@
     </div>
 </section>
 
-
-
-
-
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -240,6 +252,8 @@
 
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+<script src="scripts/scrollNav.js"></script>
+<script src="scripts/cbpAnimatedHeader.js"></script>
 <!-- endbuild -->
 </body>
 </html>
